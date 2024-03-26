@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 
 
 const Banner = () => {
@@ -8,8 +9,9 @@ const Banner = () => {
                     <img src="banner.png" className="max-w-sm rounded-lg shadow-2xl" />
                     <div className=" flex flex-col justify-start">
                         <h1 className="text-5xl font-bold text-left">Books to freshen up <br /> your bookshelf</h1>
-                        
-                        <button className="btn bg-[#23BE0A] w-5/12 text-white font-semibold mt-6 ">View The List</button>
+                        <NavLink to="/listedBooks">
+                            <button className="btn bg-[#23BE0A] w-5/12 text-white font-semibold mt-6 ">View The List</button>
+                        </NavLink>
                     </div>
                 </div>
             </div>

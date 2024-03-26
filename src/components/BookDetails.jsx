@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import UseBooks from "./Hooks/UseBooks";
-
+import  {saveLocalStorage } from "./Utility/LocalStore";
 
 const BookDetails = () => {
+    const handleBook=()=>{
+        saveLocalStorage(data);
+    }
     const [data, setData] = useState({})
     const { id } = useParams();
-    // console.log(id)
-    const { books, loading } = UseBooks();
-    // console.log(books)
+    const { books, loading} = UseBooks();
 
     useEffect(() => {
         if (books) {
@@ -17,7 +18,7 @@ const BookDetails = () => {
         }
     }, [books, id])
     const { image, tags, review, bookName, author, category, rating, totalPages, publisher, yearOfPublishing } = data || {};
-    console.log(data)
+    
     return (
         <div>
             <div className="flex flex-col w-full lg:flex-row">
@@ -56,7 +57,7 @@ const BookDetails = () => {
                         </div>
                     </div>
                     <div className="  space-x-6">
-                        <button className="btn  ">Read</button>
+                        <button onClick={handleBook} className="btn  ">Read</button>
                         <button className="btn btn-ghost bg-[#50B1C9]">Wishlist</button>
                     </div>
                 </div>

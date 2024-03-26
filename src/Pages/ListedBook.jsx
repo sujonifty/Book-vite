@@ -1,9 +1,16 @@
+import UseLocalStorage from "../components/Hooks/UseLocalStorage";
+import ListCard from "../components/ListCard";
 
 
 const ListedBook = () => {
+    const [localStorageData ] = UseLocalStorage();
+    console.log('aa', localStorageData);
     return (
         <div>
-            <h1>Listed book.</h1>
+            {
+                localStorageData.map((item, index)=><ListCard key={index} item={item}></ListCard>)
+            }
+            
         </div>
     );
 };
