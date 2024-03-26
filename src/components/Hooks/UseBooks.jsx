@@ -6,13 +6,17 @@ const UseBooks = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        setLoading(true);
-        fetch('./Books.json')
-            .then(res => res.json())
-            .then(data => setBooks(data))
-        setLoading(false)
+
+        const fetchData = async () => {
+            setLoading(true);
+            const res = await fetch(`/Books.json`);
+            const data = await res.json();
+            setBooks(data);
+            setLoading(false);
+        }
+        fetchData();
     }, [])
-    return ([books, loading]);
+    return {books, loading};
 };
 
 export default UseBooks;

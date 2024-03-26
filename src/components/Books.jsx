@@ -4,7 +4,7 @@ import UseBooks from "./Hooks/UseBooks";
 
 
 const Books = () => {
-    const [data, loading] = UseBooks();
+    const {books, loading} = UseBooks();
     // console.log(data)
     return (
         <div>
@@ -13,7 +13,7 @@ const Books = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
                 
                 {
-                    data.map(book => <BookCard key={book.bookId} book={book}></BookCard>)
+                    books.map(book => <BookCard key={book.bookId} book={book}></BookCard>)
                 }
             </div>
         </div>
