@@ -22,16 +22,16 @@ const ListedBook = () => {
                     <option className="bg-white text-black font-semibold" >Published year</option>
                 </select>
 
-                <div role="tablist" className="tabs tabs-lifted">
+                <div role="tablist" className="tabs tabs-lifted mx-auto">
                     <input type="radio" name="my_tabs_2" role="tab" className="tab " aria-label="Read Books" checked/>
-                    <div role="tabpanel" className="tab-content bg-base-100 border-base-300 space-y-10 rounded-box p-6">
+                    <div role="tabpanel" className="mx-auto tab-content bg-base-100 border-base-300 space-y-3 md:space-y-10 rounded-box md:p-6">
                         {
                             localStorageData.map((item, index) => <ListCard key={index} item={item}></ListCard>)
                         }
                     </div>
 
-                    <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="Wishlist Books"  />
-                    <div role="tabpanel" className="tab-content bg-base-100 border-base-300 space-y-10 rounded-box p-6">
+                    <input type="radio" name="my_tabs_2" role="tab" className="mx-auto tab" aria-label="Wishlist Books"  />
+                    <div role="tabpanel" className="tab-content bg-base-100 border-base-300 space-y-3 md:space-y-10 rounded-box md:p-6">
                         {
                             localStorageWishlistData.map((wishlist,index)=><Wish key={index} wishlist={wishlist} ></Wish>)
                         }
