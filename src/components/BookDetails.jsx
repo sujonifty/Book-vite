@@ -19,6 +19,22 @@ const BookDetails = () => {
     }, [books, id])
     const { image, tags, review, bookName, author, category, rating, totalPages, publisher, yearOfPublishing } = data || {};
     
+
+
+    /*
+    const handleWish=()=>{
+        saveLocalStorage(data);
+    }
+    const [wishData, setWishData] = useState({});
+    useEffect(() => {
+        if (books) {
+            const singleWishData = books.find((item) => item.bookId == id)
+            setWishData(singleWishData);
+        }
+    }, [])
+   console.log(wishData)
+   */
+
     return (
         <div>
             <div className="flex flex-col w-full lg:flex-row">
@@ -58,7 +74,7 @@ const BookDetails = () => {
                     </div>
                     <div className="  space-x-6">
                         <button onClick={handleBook} className="btn  ">Read</button>
-                        <button className="btn btn-ghost bg-[#50B1C9]">Wishlist</button>
+                        <button  className="btn btn-ghost bg-[#50B1C9]">Wishlist</button>
                     </div>
                 </div>
 

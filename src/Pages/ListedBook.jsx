@@ -1,11 +1,10 @@
 import UseLocalStorage from "../components/Hooks/UseLocalStorage";
 import ListCard from "../components/ListCard";
-import { IoIosArrowDropdown } from "react-icons/io";
 
 
 const ListedBook = () => {
     const [localStorageData] = UseLocalStorage();
-    console.log('aa', localStorageData);
+    
     return (
         <div>
 
