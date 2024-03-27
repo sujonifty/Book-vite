@@ -4,7 +4,10 @@ const Gallery = () => {
 
     return (
         <div>
-            <section className="py-6 bg-gray-200 dark:bg-gray-100 dark:text-gray-900">
+            <div className="text-3xl font-bold  p-5 rounded-xl my-4 text-center bg-gray-200">
+                <h1>Books Gallery</h1>
+            </div>
+            <section className="py-6 my-16 bg-gray-200 dark:bg-gray-100 dark:text-gray-900">
                 <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4 ">
                     <img src="https://i.ibb.co/5WNw12x/b8.png" alt="" className="hover:scale-75 w-full h-full bg-cover col-span-2 row-span-2 bg-blue-200 border-blue-300 border-4 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 dark:bg-gray-500 aspect-square" />
                     <img alt="" className="hover:scale-150 w-full h-full rounded shadow-xl min-h-48 bg-blue-200 dark:bg-white-100 border-blue-300 border-4  aspect-square" src="https://i.ibb.co/SVry0CD/b0.png" />
