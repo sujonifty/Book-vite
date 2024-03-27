@@ -1,4 +1,5 @@
-
+import { toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 export const saveLocalStorage = (data) => {
     console.log(data)
@@ -7,10 +8,10 @@ export const saveLocalStorage = (data) => {
     if (!existData) {
         saveData.push(data);
         localStorage.setItem('book', JSON.stringify(saveData));
-        alert('Reading successfully');
+        toast('Reading successfully');
     }
     else {
-        alert('Already Data exist.');
+        toast('Already Data exist.');
     }
 };
 export const saveWishlistLocalStorage = (data) => {
@@ -20,13 +21,12 @@ export const saveWishlistLocalStorage = (data) => {
     if (!existData) {
         saveData.push(data);
         localStorage.setItem('wishlist', JSON.stringify(saveData));
-        alert('Added wishlist successfully');
+        toast('Added wishlist successfully');
     }
     else {
-        alert('Already wishlist data exist.');
+        toast('Already wishlist data exist.');
     }
 };
-
 export const getDataFromLocal = () => {
     const data = JSON.parse(localStorage.getItem('book')) || [];
     return data;
