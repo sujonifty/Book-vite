@@ -3,11 +3,12 @@ import { IoLocationOutline } from "react-icons/io5";
 import { GoPeople } from "react-icons/go";
 import { MdOutlineContactPage } from "react-icons/md";
 
-const ListCard = ({ item }) => {
-    const { image, tags, bookName, author, category, rating, totalPages, publisher, yearOfPublishing } = item;
+
+const Wish = ({wishlist}) => {
+    const { image, tags, bookName, author, category, rating, totalPages, publisher, yearOfPublishing } = wishlist || {};
+    console.log(wishlist)
     return (
         <div>
-
             <div className="relative flex flex-col shadow-xl bg-slate-100 rounded-xl p-6 divide-y xl:flex-row xl:divide-y-0  dark:bg-gray-50 dark:text-gray-800 dark:divide-gray-300">
 
                 <div className="flex max-w-xl w-40 items-center gap-3 p-3">
@@ -39,17 +40,19 @@ const ListCard = ({ item }) => {
                         </div>
                     </div>
 
-                    <div className="flex  w-full space-x-3 pl-0 mt-5 font-medium"> 
-                         <li className="badge  p-4 bg-blue-200">Category:{category}</li>
-                         <li className="badge  p-4 bg-orange-100">Rating:{rating}</li>
-                         <li className="badge  p-4 bg-[#23BE0A] text-white">View Details</li>
+                    <div className="flex  w-full space-x-3 pl-0 mt-5 font-medium">
+                        <li className="badge  p-4 bg-blue-200">Category:{category}</li>
+                        <li className="badge  p-4 bg-orange-100">Rating:{rating}</li>
+                        <li className="badge  p-4 bg-[#23BE0A] text-white">View Details</li>
                     </div>
                 </div>
             </div>
         </div>
     );
 };
-ListCard.propTypes = {
-    item: PropTypes.object
+
+Wish.propTypes = {
+    wishlist: PropTypes.object
 };
-export default ListCard;
+
+export default Wish;

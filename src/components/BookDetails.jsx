@@ -1,15 +1,19 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import UseBooks from "./Hooks/UseBooks";
-import  {saveLocalStorage } from "./Utility/LocalStore";
+import {  saveLocalStorage, saveWishlistLocalStorage } from "./Utility/LocalStore";
+
 
 const BookDetails = () => {
-    const handleBook=()=>{
+    const handleBook = () => {
         saveLocalStorage(data);
+    }
+    const handleWishlistBook = () => {
+        saveWishlistLocalStorage(data);
     }
     const [data, setData] = useState({})
     const { id } = useParams();
-    const { books, loading} = UseBooks();
+    const { books, loading } = UseBooks();
 
     useEffect(() => {
         if (books) {
@@ -18,22 +22,6 @@ const BookDetails = () => {
         }
     }, [books, id])
     const { image, tags, review, bookName, author, category, rating, totalPages, publisher, yearOfPublishing } = data || {};
-    
-
-
-    /*
-    const handleWish=()=>{
-        saveLocalStorage(data);
-    }
-    const [wishData, setWishData] = useState({});
-    useEffect(() => {
-        if (books) {
-            const singleWishData = books.find((item) => item.bookId == id)
-            setWishData(singleWishData);
-        }
-    }, [])
-   console.log(wishData)
-   */
 
     return (
         <div>
@@ -74,7 +62,7 @@ const BookDetails = () => {
                     </div>
                     <div className="  space-x-6">
                         <button onClick={handleBook} className="btn  ">Read</button>
-                        <button  className="btn btn-ghost bg-[#50B1C9]">Wishlist</button>
+                        <button onClick={handleWishlistBook} className="btn btn-ghost bg-[#50B1C9]">Wishlist</button>
                     </div>
                 </div>
 
