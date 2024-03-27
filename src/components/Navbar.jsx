@@ -2,7 +2,7 @@
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
-    
+
     return (
         <div>
             <div className="navbar ">
@@ -15,15 +15,17 @@ const Navbar = () => {
                             <NavLink className={({ isActive }) => isActive ? "text-green-400 font-semibold border border-green-300" : "font-semibold text-black "} to="/" >Home</NavLink>
                             <NavLink className={({ isActive }) => isActive ? "text-green-400 font-semibold border border-green-300" : "font-semibold text-black "} to="/listedBooks" >ListedBooks</NavLink>
                             <NavLink className={({ isActive }) => isActive ? "text-green-400 font-semibold border border-green-300" : "font-semibold text-black "} to="/pagesToRead" >PagesRead</NavLink>
+                            <NavLink className={({ isActive }) => isActive ? "text-green-400 font-semibold border border-green-300" : "font-semibold text-black "} to="/bookGallery" >Gallery</NavLink>
                         </ul>
                     </div>
                     <NavLink to="/" className="btn btn-ghost text-xl">Book Vibe</NavLink>
                 </div>
                 <div className="navbar-center hidden lg:flex ">
                     <ul className=" px-1">
-                    <NavLink className={({ isActive }) => isActive ? "text-green-400 font-semibold border border-green-300 rounded-xl p-2" : "font-semibold text-black p-2 "} to="/" >Home</NavLink>
-                            <NavLink className={({ isActive }) => isActive ? "text-green-400 font-semibold border border-green-300 rounded-xl p-2 mx-5" : "font-semibold text-black p-2 mx-5"} to="/listedBooks" >Listed Books</NavLink>
-                            <NavLink className={({ isActive }) => isActive ? "text-green-400 font-semibold border border-green-300 rounded-xl p-2" : "font-semibold text-black p-2 "} to="/pagesToRead" >Pages to Read</NavLink>
+                        <NavLink className={({ isActive }) => isActive ? "text-green-400 font-semibold border border-green-300 rounded-xl p-2" : "font-semibold text-black p-2 "} to="/" >Home</NavLink>
+                        <NavLink className={({ isActive }) => isActive ? "text-green-400 font-semibold border border-green-300 rounded-xl p-2 mx-5" : "font-semibold text-black p-2 mx-5"} to="/listedBooks" >Listed Books</NavLink>
+                        <NavLink className={({ isActive }) => isActive ? "text-green-400 font-semibold border border-green-300 rounded-xl p-2" : "font-semibold text-black p-2 "} to="/pagesToRead" >Pages to Read</NavLink>
+                        <NavLink className={({ isActive }) => isActive ? "text-green-400 font-semibold border border-green-300 rounded-xl p-2" : "font-semibold text-black p-2"} to="/bookGallery" >Gallery</NavLink>
                     </ul>
                 </div>
                 <div className="navbar-end hidden lg:flex">

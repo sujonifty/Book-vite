@@ -10,11 +10,14 @@ import Home from './Pages/Home.jsx';
 import ListedBook from './Pages/ListedBook.jsx';
 import ReadBook from './Pages/ReadBook.jsx';
 import BookDetails from './components/BookDetails.jsx';
+import Gallery from './Pages/Gallery.jsx';
+import ErrorPage from './components/ErrorPage.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
+    errorElement:<ErrorPage></ErrorPage>,
     children:[
       {
         path: "/",
@@ -31,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/bookDetails/:id",
         element:<BookDetails></BookDetails>,
+      },
+      {
+        path: "/bookGallery",
+        element:<Gallery></Gallery>,
       },
     ]
   },
