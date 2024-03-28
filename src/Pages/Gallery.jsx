@@ -58,20 +58,20 @@ const Gallery = () => {
                     </div>
                 </div>
                 <section className="bg-[#7e8b9c] rounded-b-xl">
-                    <div className="container lg:space-x-4 rounded-b-xl flex flex-col justify-center items-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+                    <div className="container space-y-4 lg:space-x-4 rounded-b-xl flex flex-col justify-center items-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
                         <div className="flex shadow-xl rounded-2xl bg-white items-center justify-center lg:p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
                             <img src="https://i.ibb.co/4RC8sgC/apibook.webp" alt="" className="object-contain shadow-xl rounded-2xl h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
                         </div>
                         <div className="flex bg-[#dee4ee] rounded-xl  flex-col justify-center lg:p-6 text-center  lg:max-w-md xl:max-w-lg lg:text-left">
-                            <h1 className="text-gray-600 lg:text-5xl font-bold leading-none sm:text-xl">Import Books
+                            <h1 className="text-gray-600  p-2 lg:text-5xl font-bold leading-none sm:text-lg">Import Books
 
                                 <span className="dark:text-violet-600">via API </span>From Open Library & Google Books.
                             </h1>
-                            <p className="mt-6 mb-8 text-lg sm:mb-12">This is a handy tool that saves a lot of typing. All you need is the ISBN 10 number of the book you want to import.
+                            <p className="mt-6 mb-8 lg:text-lg sm:mb-12">This is a handy tool that saves a lot of typing. All you need is the ISBN 10 number of the book you want to import.
                                 <br className="hidden md:inline lg:hidden" />The importer brings in all the book details from the Google Books Archive. You can add multiple ISBNs at once, separated by a comma.
                             </p>
                             <div className="">
-                                <a rel="noopener noreferrer" href="#" className="btn rounded-xl px-8 py-3 text-lg font-bold  bg-gray-600 btn-info text-white">Get Started</a>
+                                <a rel="noopener noreferrer" href="#" className="btn rounded-xl px-8 py-3 lg:text-lg font-bold  bg-gray-600 btn-info text-white">Get Started</a>
                             </div>
                         </div>
                     </div>
