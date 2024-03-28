@@ -10,12 +10,12 @@ const ListedBook = () => {
     const [localStorageData] = UseLocalStorage();
     const [localStorageWishlistData] = UseLocalStorageWishlist();
     const [read, setRead] = useState([])
-    const [wishlist, setWishlist] = useState([])
+    // const [wishlist, setWishlist] = useState([])
     useEffect(() => {
         setRead(localStorageData);
-        setWishlist(getDataFromLocalStorage())
+        // setWishlist(getDataFromLocalStorage())
     }, [localStorageData])
-    console.log(wishlist)
+    // console.log(wishlist)
     // Sort by rating 
     const handleSortByRating = () => {
         localStorageData.sort((a, b) => {
@@ -24,11 +24,11 @@ const ListedBook = () => {
         });
         setRead([...localStorageData]);
 
-        const wish =[...wishlist].sort((a, b) => {
-            return b.rating - a.rating;
+        // const wish =[...wishlist].sort((a, b) => {
+        //     return b.rating - a.rating;
 
-        });
-        setWishlist(wish);
+        // });
+        // setWishlist(wish);
     }
 
     // sort by pages 
@@ -40,11 +40,11 @@ const ListedBook = () => {
         setRead([...localStorageData]);
 
         
-        const wish2 =[...wishlist].sort((a, b) => {
-            return b.totalPages - a.totalPages
+        // const wish2 =[...wishlist].sort((a, b) => {
+        //     return b.totalPages - a.totalPages
 
-        });
-        setWishlist(wish2);
+        // });
+        // setWishlist(wish2);
     }
     // sort by year 
     const handleSortByYear = () => {
@@ -53,11 +53,11 @@ const ListedBook = () => {
 
         });
         setRead([...localStorageData]);
-        const wish3 =[...wishlist].sort((a, b) => {
-            return b.yearOfPublishing - a.yearOfPublishing
+        // const wish3 =[...wishlist].sort((a, b) => {
+        //     return b.yearOfPublishing - a.yearOfPublishing
 
-        });
-        setWishlist(wish3);
+        // });
+        // setWishlist(wish3);
     }
 
     return (
