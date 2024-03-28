@@ -30,7 +30,7 @@ const BookDetails = () => {
                     <img src={image} alt="Book" />
                 </div>
                 <div className="grid flex-grow  border rounded-lg text-left p-10">
-                    <h1 className="card-title">{bookName}</h1>
+                    <h1 className="card-title playfair-display">{bookName}</h1>
                     <p>By : {author}</p>
                     <div className="">
                         <p>{category}</p>

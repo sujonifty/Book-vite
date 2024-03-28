@@ -4,11 +4,11 @@ import UseBooks from "./Hooks/UseBooks";
 
 
 const Books = () => {
-    const {books, loading} = UseBooks();
-    // console.log(data)
+    const {books} = UseBooks();
+    
     return (
         <div>
-            {/* <UseBooks></UseBooks> */}
+            
             <h1 className="text-4xl font-bold mt-16 mb-7">Books</h1>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
                 

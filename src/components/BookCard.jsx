@@ -22,7 +22,7 @@ const BookCard = ({ book }) => {
                     </div>
 
                     <div className="card-body p-3">
-                        <h2 className="card-title">{bookName}</h2>
+                        <h2 className="card-title playfair-display">{bookName}</h2>
                         <p className="card-title font-normal text-base">By:{author}</p>
                     </div>
 

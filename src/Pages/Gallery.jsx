@@ -4,7 +4,7 @@ const Gallery = () => {
 
     return (
         <div>
-            <div className=" text-xl lg:text-5xl mt-24 font-bold mb-10 lg:10 lg:p-5 rounded-xl  text-center border-b-4 border-gray-300 bg-gray-200">
+            <div className="playfair-display text-xl lg:text-5xl mt-24 font-bold mb-10 lg:10 lg:p-5 rounded-xl  text-center border-b-4 border-gray-300 bg-gray-200">
                 <h1 >A Visual Voyage through  books</h1>
             </div>
             <div className="lg:p-5 mx-auto sm:p-10 md:p-16 bg-[#37475aff] mb-24 ">
@@ -17,7 +17,7 @@ const Gallery = () => {
                                 <a rel="noopener noreferrer" href="#" className="text-xs ml-1 hover:underline">Sujonifty</a>
                             </p>
                         </div>
-                        <div className="dark:text-gray-800">
+                        <div className="playfair-display dark:text-gray-800">
                             <p>
                                 Welcome to our Books Gallery, a haven for book lovers and explorers of the written word. Here, amidst a vibrant collection of literary treasures, you'll find a tapestry of stories waiting to be unraveled. From gripping thrillers to heartwarming classics, each book holds the promise of adventure, enlightenment, and pure escapism. Join us as we open the doors to imagination and invite you to embark on a journey through the boundless realms of literature.
                             </p>
@@ -25,7 +25,7 @@ const Gallery = () => {
                     </div>
                 </div>
             </div>
-            <div className="text-3xl font-bold  lg:p-5 rounded-xl mt-10 text-center border-b-4 border-gray-300 bg-gray-200">
+            <div className=" playfair-display text-3xl font-bold  lg:p-5 rounded-xl mt-10 text-center border-b-4 border-gray-300 bg-gray-200">
                 <h1>Books Gallery</h1>
                 <div className="text-gray-800 text-base w-11/12 mx-auto m-5">
                     <p>
@@ -51,7 +51,7 @@ const Gallery = () => {
             <div className="container w-full max-w-4xl lg:p-6 mx-auto  rounded-md ">
                
                 <div className="lg:p-4 space-y-2 text-sm text-left text-gray-600">
-                    <h1 className="text-3xl font-bold text-violet-700 my-5">Book Imports: Using Open Library & Google Books APIs</h1>
+                    <h1 className="text-3xl font-bold text-violet-700 my-5 playfair-display">Book Imports: Using Open Library & Google Books APIs</h1>
                     <p>In today's digital age, importing books has become easier than ever thanks to Open Library and Google Books APIs. This article explores how these APIs streamline the process of adding books to digital libraries and online platforms.</p>
                     <p>Discover the simplicity of adding books to your collection with Open Library and Google Books APIs. This article outlines the straightforward process of importing books from these vast repositories, making it easier than ever to expand your library's offerings.</p>
                 </div>

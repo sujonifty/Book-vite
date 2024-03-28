@@ -15,7 +15,7 @@ const ListCard = ({ item }) => {
 
                 </div>
                 <div className="p-3 space-y-4">
-                    <h3 className="text-3xl font-semibold text-left">{bookName}</h3>
+                    <h3 className="playfair-display text-3xl font-semibold text-left">{bookName}</h3>
                     <p className="text-sm dark:text-gray-600 text-left"><span className='font-bold'>By:</span>{author}</p>
                     <div className=" flex flex-col md:flex-row md:w-full gap-3 md:space-x-3  md:p-5 text-left text-[#23BE0A] font-medium">
                         {
