@@ -9,6 +9,7 @@ const UseLocalStorage = () => {
     },[]);
     return [LocalStorageData];
 };
+
 export const UseLocalStorageWishlist = () => {
     const [localStorageWishlistData,setLocalStorageWishlistData]=useState([]);
     useEffect(()=>{

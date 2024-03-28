@@ -6,7 +6,7 @@ import { MdOutlineContactPage } from "react-icons/md";
 
 const Wish = ({wishlist}) => {
     const { image, tags, bookName, author, category, rating, totalPages, publisher, yearOfPublishing } = wishlist || {};
-    console.log(wishlist)
+    // console.log(wishlist)
     return (
         <div>
             <div className="relative w-full flex flex-col shadow-xl my-10 bg-slate-100 rounded-xl p-6 divide-y xl:flex-row xl:divide-y-0  dark:bg-gray-50 dark:text-gray-800 dark:divide-gray-300">

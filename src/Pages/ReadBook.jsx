@@ -21,10 +21,10 @@ const TriangleBar = (props) => {
 
 export default function ReadBookChart() {
   const [dataFromStore] = UseLocalStorage();
-  console.log(dataFromStore);
+  
 
   return (
-    <ResponsiveContainer width="100%" height={550}> {/* Wrap your chart with ResponsiveContainer */}
+    <ResponsiveContainer width="100%" height={550}> 
       <BarChart
         data={dataFromStore}
         margin={{
