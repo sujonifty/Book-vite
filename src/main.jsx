@@ -11,6 +11,7 @@ import Gallery from './Pages/Gallery.jsx';
 import ErrorPage from './components/ErrorPage.jsx';
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import About from './Pages/About.jsx';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "/bookGallery",
         element:<Gallery></Gallery>,
+      },
+      {
+        path: "/about",
+        element:<About></About>,
       },
     ]
   },
