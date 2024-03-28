@@ -2,10 +2,10 @@
 const About = () => {
     return (
         <div>
-            <section className="bg-[#37475aff] rounded-xl rounded-b-none mt-24 text-white">
+            <section className="bg-[#37475aff] rounded-xl rounded-b-none mt-10 lg:mt-24 text-white">
                 <div className="flex flex-col mx-auto lg:flex-row">
                     <div className="w-full lg:p-5 lg:w-2/3">
-                        <img className="bg-cover relative lg:top-20 shadow-2xl rounded-xl lg:left-20 w-3/5" src="https://i.ibb.co/YfMTT9W/bbb2.jpg" alt="" />
+                        <img className="bg-cover relative lg:top-20 shadow-2xl rounded-xl lg:left-20 w-full lg:w-3/5" src="https://i.ibb.co/YfMTT9W/bbb2.jpg" alt="" />
                     </div>
                     <div className="flex justify-start items-end flex-col w-full lg:w-[70%] pb-0 lg:p-5 ">
                         <div className="relative lg:-left-24">

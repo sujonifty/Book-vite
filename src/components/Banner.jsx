@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Banner = () => {
     return (
         <div>
-            <div className="hero w-96 lg:w-full lg:min-h-screen bg-base-200">
+            <div className="hero rounded-xl w-96 lg:w-full lg:min-h-screen bg-base-200">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <img src="banner.png" className=" w-96 lg:max-w-sm rounded-lg shadow-2xl" />
                     <div className=" flex flex-col justify-start">

@@ -5,7 +5,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className="navbar ">
+            <div className="navbar shadow-xl">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -19,7 +19,7 @@ const Navbar = () => {
                             <NavLink className={({ isActive }) => isActive ? "text-green-400 font-semibold border border-green-300" : "font-semibold text-black "} to="/about" >About us</NavLink>
                         </ul>
                     </div>
-                    <NavLink to="/" className="btn btn-ghost text-xl">Book Vibe</NavLink>
+                    <NavLink to="/" className="btn btn-ghost text-2xl font-bold">Book Vibe</NavLink>
                 </div>
                 <div className="navbar-center hidden lg:flex ">
                     <ul className=" px-1">
